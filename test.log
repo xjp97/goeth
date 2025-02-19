@@ -1,0 +1,25 @@
+[GIN-debug] Loaded HTML Templates (3): 
+	- index.html
+	- 
+	- 404.html
+
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> main.main.func1 (3 handlers)
+[GIN-debug] GET    /someJSON                 --> main.main.func2 (3 handlers)
+[GIN-debug] GET    /index                    --> main.main.func3 (3 handlers)
+[GIN-debug] GET    /user                     --> main.main.func4 (3 handlers)
+[GIN-debug] GET    /userArr                  --> main.main.func5 (3 handlers)
+[GIN-debug] GET    /user/info                --> main.main.func6 (3 handlers)
+[GIN-debug] GET    /user/info/:userId/:name  --> main.main.func7 (3 handlers)
+[GIN-debug] POST   /user/form                --> main.main.func8 (3 handlers)
+[GIN-debug] POST   /user/json                --> main.main.func9 (3 handlers)
+[GIN-debug] GET    /redirect                 --> main.main.func10 (3 handlers)
+[GIN-debug] GET    /order/get                --> main.main.func12 (4 handlers)
+[GIN-debug] GET    /order/update             --> main.main.func13 (4 handlers)
+[GIN-debug] POST   /login                    --> main.main.func14 (4 handlers)
+[GIN-debug] POST   /session                  --> main.main.func15 (4 handlers)
+[GIN-debug] GET    /someDataFromReader       --> main.main.func16 (4 handlers)
+[GIN-debug] POST   /loginJSON                --> main.main.func17 (4 handlers)
+[GIN-debug] GET    /admin/secrets            --> main.main.func18 (5 handlers)
+[GIN-debug] GET    /ping                     --> main.main.func19 (4 handlers)
