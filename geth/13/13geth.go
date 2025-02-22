@@ -17,12 +17,12 @@ import (
 // 以太坊代币交易
 func main() {
 
-	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/")
+	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/week-63a2htFcK69secsJ8zxnFXAx8_1")
 	if err != nil {
 		log.Fatal(err)
 	}
 	// 加载私钥
-	privateKey, err := crypto.HexToECDSA("")
+	privateKey, err := crypto.HexToECDSA("ec68ae6b9c67ee944ef3f3256c02397caa92649db47593b5e3494c6d95a9ea61")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -42,8 +42,9 @@ func main() {
 	value := big.NewInt(0)
 	// 获取平均燃气价格
 	gasPrice, err := client.SuggestGasPrice(context.Background())
+	gasPrice = big.NewInt(0).Add(gasPrice, big.NewInt(10000000000))
 	// 代币合约地址
-	tokenAddress := common.HexToAddress("0x8FD801A567d963AdA02D57Ae0429f3B80D0143A3")
+	tokenAddress := common.HexToAddress("0xED7394F748DD3a2Cc8a61B0E54Cd10FcDeabC68c")
 	// erc20 转账函数
 	transferFnSignature := []byte("transfer(address,uint256)")
 	// 生成函数签名
